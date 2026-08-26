@@ -132,7 +132,7 @@ header {
     font-size: 16px;
 }
 
-/* CONTÊINERES DOS PILARES (REFERÊNCIA CORRIGIDA PARA O FUNDO DE ONDAS) */
+/* CONTÊINERES DOS PILARES (FUNDO DE ONDAS FLUIDAS) */
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -279,7 +279,7 @@ th {
     content: '−';
 }
 
-/* ÚLTIMO CONTÊINER (REFERÊNCIA CORRIGIDA PARA O BRASÃO PREMIUM) */
+/* ÚLTIMO CONTÊINER (PRIMEIRA REFERÊNCIA: BRASÃO DE ELITE) */
 .pricing-box {
     background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('logo.jpeg') no-repeat center center;
     background-size: cover;
