@@ -1,4 +1,6 @@
-/* Estilos Globais Modernos (Dark Mode Tático) */
+/* ========================================================
+   1. ESTILOS GLOBAIS E ESTRUTURA TÁTICA BASE 
+   ======================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +19,7 @@ body {
     padding: 0 20px;
 }
 
-/* BANNER DE CONTAGEM REGRESSIVA */
+/* BANNER DE CONTAGEM REGRESSIVA (CRONÔMETRO) */
 .countdown-banner {
     background: linear-gradient(90deg, #0f172a 0%, #1e3a8a 100%);
     color: #ffffff;
@@ -48,8 +50,7 @@ body {
 /* HEADER / HERO */
 header {
     text-align: center;
-    padding: 60px 20px 80px 20px;
-    border-bottom: 1px solid #1e293b;
+    padding: 60px 20px 60px 20px;
     background: linear-gradient(135deg, rgba(15, 23, 42, 0.4) 0%, rgba(30, 41, 59, 0.2) 100%);
     border-radius: 0 0 24px 24px;
     backdrop-filter: blur(8px);
@@ -82,7 +83,31 @@ header {
     line-height: 1.6;
 }
 
-/* BOTÃO CTA PREMIUM */
+/* DESIGN DO CONTÊINER PRINCIPAL DA VSL (CINEMA STYLE) */
+.vsl-section {
+    padding: 60px 0 80px 0;
+    border-bottom: 1px solid #1e293b;
+}
+.vsl-container {
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid rgba(56, 189, 248, 0.4);
+    box-shadow: 0 20px 40px rgba(2, 132, 199, 0.15);
+}
+.vsl-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* BOTÃO CTA PREMIUM E SEÇÕES GERAIS */
 .btn-cta {
     display: inline-block;
     background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%);
@@ -112,8 +137,6 @@ header {
     color: #94a3b8;
     flex-wrap: wrap;
 }
-
-/* SEÇÕES PADRÃO */
 .section-padding {
     padding: 80px 0;
     border-bottom: 1px solid #1e293b;
@@ -131,8 +154,9 @@ header {
     margin-bottom: 48px;
     font-size: 16px;
 }
-
-/* CONTÊINERES DOS PILARES (FUNDO DE ONDAS FLUIDAS) */
+/* ========================================================
+   2. PILARES, TABELA COMPARATIVA E GRADE DE 5 VÍDEOS
+   ======================================================== */
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -197,7 +221,62 @@ th {
     background: rgba(56, 189, 248, 0.03);
 }
 
-/* PROVA SOCIAL */
+/* COMPONENTE EXCLUSIVO PARA OS 5 DEPOIMENTOS EM VÍDEO */
+.grid-video-testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+.video-testimonial-card {
+    background: #09090b;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.video-testimonial-card:hover {
+    border-color: rgba(56, 189, 248, 0.5);
+    box-shadow: 0 10px 20px rgba(2, 132, 199, 0.15);
+}
+.video-testimonial-card .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.video-testimonial-card .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-info {
+    padding: 16px;
+}
+.video-info h4 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+.video-info p {
+    font-size: 13px;
+    color: #94a3b8;
+    line-height: 1.4;
+}
+
+/* Alinhamento inteligente simétrico para o 5º elemento da grade */
+@media (min-width: 992px) {
+    .M-full-width {
+        grid-column: span 2;
+        max-width: 460px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+/* PROVA SOCIAL EM TEXTO, FAQ, OFERTA E FOOTER */
 .grid-testimonials {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -229,8 +308,6 @@ th {
     line-height: 1.5;
     font-style: italic;
 }
-
-/* FAQ */
 .faq-wrapper {
     max-width: 800px;
     margin: 0 auto;
@@ -278,8 +355,6 @@ th {
 .faq-item.active .faq-icon::before {
     content: '−';
 }
-
-/* ÚLTIMO CONTÊINER (PRIMEIRA REFERÊNCIA: BRASÃO DE ELITE) */
 .pricing-box {
     background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('logo.jpeg') no-repeat center center;
     background-size: cover;
@@ -331,8 +406,6 @@ th {
     padding: 12px;
     border-radius: 8px;
 }
-
-/* LINK INSTAGRAM & FOOTER */
 .instagram-link {
     display: inline-flex;
     align-items: center;
