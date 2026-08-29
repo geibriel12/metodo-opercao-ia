@@ -31,19 +31,17 @@
             </div>
         </header>
 
-        <!-- SEÇÃO VSL (VIDEO SALES LETTER) -->
+        <!-- SEÇÃO VSL (VIDEO SALES LETTER - FORMATO LOCAL) -->
         <section class="vsl-section">
             <h2 class="section-title">Assista à Apresentação Operacional</h2>
             <p class="section-subtitle">Entenda em 3 minutos como a Inteligência Artificial vai blindar sua preparação.</p>
             
             <div class="vsl-container">
-                <iframe 
-                    src="https://youtube.com" 
-                    title="Método Operação-AI VSL" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                </iframe>
+                <!-- VSL configurada como vídeo local. Altere o src para o nome do arquivo da VSL quando colocá-lo na pasta -->
+                <video controls preload="metadata">
+                    <source src="vsl.mp4" type="video/mp4">
+                    Seu navegador não suporta a reprodução deste vídeo.
+                </video>
             </div>
             
             <div style="text-align: center; margin-top: 30px;">
@@ -109,75 +107,23 @@
             </div>
         </section>
 
-        <!-- SEÇÃO: 5 DEPOIMENTOS EM VÍDEO (ARQUIVOS LOCAIS) -->
+        <!-- SEÇÃO: DEPOIMENTOS EM VÍDEO (GABRIEL CONFIGURADO) -->
         <section class="section-padding">
             <h2 class="section-title">Quem Já Está No Campo de Batalha</h2>
             <p class="section-subtitle">Veja o depoimento de alunos que mudaram a forma de estudar para carreiras policiais.</p>
             
             <div class="grid-video-testimonials">
-                <div class="video-testimonial-card">
-                    <div class="video-wrapper">
-                        <video controls preload="metadata">
-                            <source src="depoimento1.mp4" type="video/mp4">
-                            Seu navegador não suporta a reprodução deste vídeo.
-                        </video>
-                    </div>
-                    <div class="video-info">
-                        <h4>Carlos Henrique</h4>
-                        <p>Aprovado PM - "O robô me cobrando todo dia no WhatsApp foi o diferencial para manter a constância."</p>
-                    </div>
-                </div>
-
-                <div class="video-testimonial-card">
-                    <div class="video-wrapper">
-                        <video controls preload="metadata">
-                            <source src="depoimento2.mp4" type="video/mp4">
-                            Seu navegador não suporta a reprodução deste vídeo.
-                        </video>
-                    </div>
-                    <div class="video-info">
-                        <h4>Mariana Costa</h4>
-                        <p>Estudante PC - "A correção de redação por foto economizou semanas de espera em cursinhos."</p>
-                    </div>
-                </div>
-
-                <div class="video-testimonial-card">
-                    <div class="video-wrapper">
-                        <video controls preload="metadata">
-                            <source src="depoimento3.mp4" type="video/mp4">
-                            Seu navegador não suporta a reprodução deste vídeo.
-                        </video>
-                    </div>
-                    <div class="video-info">
-                        <h4>Roberto Alves</h4>
-                        <p>Estudante PC - "Os relatórios direto no chat mostram exatamente onde estou errando."</p>
-                    </div>
-                </div>
-
-                <div class="video-testimonial-card">
-                    <div class="video-wrapper">
-                        <video controls preload="metadata">
-                            <source src="depoimento4.mp4" type="video/mp4">
-                            Seu navegador não suporta a reprodução deste vídeo.
-                        </video>
-                    </div>
-                    <div class="video-info">
-                        <h4>Juliana Prado</h4>
-                        <p>Aprovada PC - "Estudar pelo celular no caminho do trabalho otimizou o meu tempo escasso."</p>
-                    </div>
-                </div>
-
-                <!-- 5º Elemento com a classe de alinhamento simétrico do CSS -->
+                <!-- Card do Gabriel centralizado de forma harmônica -->
                 <div class="video-testimonial-card M-full-width">
                     <div class="video-wrapper">
                         <video controls preload="metadata">
-                            <source src="depoimento5.mp4" type="video/mp4">
+                            <source src="WhatsApp Video 2026-08-29 at 17.31.09.mp4" type="video/mp4">
                             Seu navegador não suporta a reprodução deste vídeo.
                         </video>
                     </div>
                     <div class="video-info">
-                        <h4>Fernando Souza</h4>
-                        <p>Estudante Carreiras Policiais - "Layout prático, dinâmico e sem enrolação."</p>
+                        <h4>Gabriel</h4>
+                        <p>Estudante de Carreiras Policiais - "O robô me cobrando todo dia no WhatsApp foi o diferencial para manter a constância."</p>
                     </div>
                 </div>
             </div>
@@ -258,3 +204,11 @@
             <a href="https://instagram.com" target="_blank" class="instagram-link">
                 <i class="fab fa-instagram"></i> Siga-nos no Instagram
             </a>
+            <p>&copy; 2026 Método Operação-AI. Todos os direitos reservados. Plataforma de pagamentos segura integrada via Kiwify.</p>
+        </div>
+    </footer>
+
+    <!-- VINCULAÇÃO DO SCRIPT JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>

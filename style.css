@@ -99,12 +99,16 @@ header {
     border: 2px solid rgba(56, 189, 248, 0.4);
     box-shadow: 0 20px 40px rgba(2, 132, 199, 0.15);
 }
-.vsl-container iframe {
+/* Suporte para iframe e vídeos locais da VSL */
+.vsl-container iframe,
+.vsl-container video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    background-color: #000;
 }
 
 /* BOTÃO CTA PREMIUM E SEÇÕES GERAIS */
@@ -267,11 +271,11 @@ th {
     line-height: 1.4;
 }
 
-/* Alinhamento inteligente simétrico para o 5º elemento da grade */
+/* Alinhamento inteligente simétrico para o elemento centralizado */
 @media (min-width: 992px) {
     .M-full-width {
         grid-column: span 2;
-        max-width: 460px;
+        max-width: 520px;
         margin: 0 auto;
         width: 100%;
     }

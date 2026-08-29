@@ -3,7 +3,7 @@
 // ==========================================
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
-    setInterval(function () {
+    var interval = setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
@@ -13,13 +13,14 @@ function startTimer(duration, display) {
         display.textContent = minutes + ":" + seconds;
 
         if (--timer < 0) {
-            timer = duration; 
+            clearInterval(interval);
+            display.textContent = "00:00";
         }
     }, 1000);
 }
 
 // ==========================================
-// 2. LÓGICA INTERATIVA DO FAQ (ACORDION)
+// 2. LÓGICA INTERATIVA DO FAQ (ACCORDION)
 // ==========================================
 document.querySelectorAll('.faq-trigger').forEach(button => {
     button.addEventListener('click', () => {
@@ -35,9 +36,12 @@ document.querySelectorAll('.faq-trigger').forEach(button => {
     });
 });
 
-// INITIALIZATION AO CARREGAR A PÁGINA
+// INICIALIZAÇÃO CONTROLADA AO CARREGAR A PÁGINA
 window.onload = function () {
     var fifteenMinutes = 60 * 15,
         display = document.querySelector('#countdown-timer');
-    startTimer(fifteenMinutes, display);
+    
+    if (display) {
+        startTimer(fifteenMinutes, display);
+    }
 };
