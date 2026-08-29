@@ -154,9 +154,8 @@ header {
     margin-bottom: 48px;
     font-size: 16px;
 }
-/* ========================================================
-   2. PILARES, TABELA COMPARATIVA E GRADE DE 5 VÍDEOS
-   ======================================================== */
+
+/* OS TRÊS PILARES */
 .grid-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -191,7 +190,6 @@ header {
     font-size: 14px;
     line-height: 1.6;
 }
-
 /* TABELA COMPARATIVA */
 .table-container {
     width: 100%;
@@ -221,7 +219,7 @@ th {
     background: rgba(56, 189, 248, 0.03);
 }
 
-/* COMPONENTE EXCLUSIVO PARA OS 5 DEPOIMENTOS EM VÍDEO */
+/* COMPONENTE PARA OS DEPOIMENTOS EM VÍDEO (ARQUIVOS LOCAIS) */
 .grid-video-testimonials {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -245,12 +243,15 @@ th {
     padding-bottom: 56.25%;
     height: 0;
 }
-.video-testimonial-card .video-wrapper iframe {
+.video-testimonial-card .video-wrapper iframe,
+.video-testimonial-card .video-wrapper video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    background-color: #000000;
 }
 .video-info {
     padding: 16px;
