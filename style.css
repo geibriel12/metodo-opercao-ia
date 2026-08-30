@@ -99,7 +99,7 @@ header {
     border: 2px solid rgba(56, 189, 248, 0.4);
     box-shadow: 0 20px 40px rgba(2, 132, 199, 0.15);
 }
-/* Suporte para iframe e vídeos locais da VSL */
+/* Suporte responsivo completo para os vídeos locais */
 .vsl-container iframe,
 .vsl-container video {
     position: absolute;
@@ -108,7 +108,7 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-color: #000;
+    background-color: #000000;
 }
 
 /* BOTÃO CTA PREMIUM E SEÇÕES GERAIS */
@@ -223,7 +223,7 @@ th {
     background: rgba(56, 189, 248, 0.03);
 }
 
-/* COMPONENTE PARA OS DEPOIMENTOS EM VÍDEO (ARQUIVOS LOCAIS) */
+/* COMPONENTE DE DEPOIMENTOS EM VÍDEO LOCAL */
 .grid-video-testimonials {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -271,7 +271,7 @@ th {
     line-height: 1.4;
 }
 
-/* Alinhamento inteligente simétrico para o elemento centralizado */
+/* Alinhamento simétrico inteligente para o card do Gabriel */
 @media (min-width: 992px) {
     .M-full-width {
         grid-column: span 2;
@@ -429,7 +429,6 @@ th {
 .instagram-link i {
     font-size: 18px;
 }
-/* Estilo do rodapé */
 footer {
     text-align: center;
     padding: 40px 0;
@@ -437,3 +436,4 @@ footer {
     color: #475569;
     border-top: 1px solid #1e293b;
 }
+
